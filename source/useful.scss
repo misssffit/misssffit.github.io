@@ -1,0 +1,139 @@
+
+
+.useful {
+    padding: 0 20px 0 20px;
+    margin-bottom: 120px;
+    // .useful__row
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // .useful__column
+
+    &__column {
+        flex: 1 1 50%;
+        margin-right: 50px;
+
+        &:last-child{
+            margin:  0 0 0 50px;
+        }
+    }
+
+    // .useful__title
+
+    &__title {
+        padding-right: 80px;
+        border-bottom: 1px solid #ffffff;
+        margin-bottom: 42px;
+        transform: translate(-10% 0);
+        opacity: 0;
+        transition: all 0.5s ease 0s;
+    }
+
+    // .useful__level
+
+    &__level {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15px;
+        transform: translate(-10% 0);
+        opacity: 0;
+        transition: all 0.5s ease 0s;
+    }
+
+    // .useful__name
+
+    &__name {
+        font-weight: 600;
+        font-size: 29px;
+        line-height: 49px;
+        color: #ffffff;
+    }
+
+    // .useful__knowladge
+
+    &__knowladge {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 26px;
+        color: #ffffff;
+    }
+
+    // .useful__line
+
+    &__line {
+        height: 30px;
+        border-radius: 15px;
+        background: linear-gradient(90deg, #3C1DFF 18.63%, #14C9C9 78.88%);
+    }
+
+    #eng{
+        width: 0%;
+    }
+
+    #ukr{
+        width: 0%;
+    }
+    #psd{
+        width: 0%;
+    }
+    #res{
+        width: 0%;
+    }
+    #vc{
+        width: 0%;
+    }
+}
+
+
+.eng{
+    width: 80%;
+}
+.urk{
+    width: 100%;
+}
+.psd{
+    width: 70%;
+}
+.res{
+    width: 80%;
+}
+.vc{
+    width: 60%;
+}
+
+.useful__row.active{
+    .useful__title{
+        transform: translate( 0);
+        opacity: 1;
+        transition: all 2s ease 0s;
+    }
+    .useful__level{
+        transform: translate( 0);
+        opacity: 1;
+        transition: all 2s ease 0s;
+    }
+    #eng{
+        width: 80%;
+        transition: all 1s ease 0s;
+    }
+    #ukr{
+        width: 100%;
+        transition: all 1s ease 0s;
+    }
+    #psd{
+        width: 70%;
+        transition: all 1s ease 0s;
+    }
+    #res{
+        width: 80%;
+        transition: all 1s ease 0s;
+    }
+    #vc{
+        width: 60%;
+        transition: all 1s ease 0s;
+    }
+}

@@ -1,0 +1,89 @@
+////// variables ////////
+
+$title : 67px;
+
+////////////////////////
+
+////// mixins /////////
+
+@mixin titles {
+    font-weight: 600;
+    color: #ffffff;
+}
+
+///////////////////////
+
+.greeting {
+    margin-top: 120px;
+    padding: 0 20px 0 20px;
+    margin-bottom: 130px;
+    // .greeting__row
+
+    &__row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // .greeting__content
+
+    &__content {
+        flex: 1 1 50%;
+        text-align: right;
+        transform: translate(0, 20%);
+        opacity: 0;
+        transition: all 1s ease 0s;
+    }
+
+    // .greeting__welcome
+
+    &__welcome {
+        font-weight: 300;
+        font-size: 24px;
+        color: #C4C4C4;
+        line-height: 38px;
+    }
+
+    // .greeting__title
+
+    &__title {
+        @include titles;
+        font-size: $title;
+        line-height: 100px;
+    }
+
+    // .greeting__text
+
+    &__text {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 30px;
+        color: #ffffff;
+    }
+
+    // .greeting__img
+
+    &__img {
+        flex: 1 1 50%;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        transform: translate(0, 20%);
+        opacity: 0;
+        transition: all 1s ease 0s;
+    }
+}
+
+.greeting__row.active{
+    .greeting__content{
+        transform: translate(0, 0);
+        opacity: 1;
+        transition: all 1s ease 0s;
+    }
+    .greeting__img{
+        transform: translate(0, 0);
+        opacity: 1;
+        transition: all 1s ease 0s;
+    }
+}

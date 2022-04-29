@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <title>Misssffit</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__row">
+                    <div class="header__logo">Misssffit</div>
+                    <div class="header__menu menu">
+                        <div class="menu__icon">
+                            <span></span>
+                        </div>
+                        <div class="menu__body">
+                            <ul class="menu__list">
+                                <li>
+                                    <a data-goto=".greeting" href="" class="menu__link">Greeting</a>
+                                </li>
+                                <li>
+                                    <a data-goto=".about" href="" class="menu__link">About me</a>
+                                </li>
+                                <li>
+                                    <a data-goto=".skills" href="" class="menu__link">My skills</a>
+                                </li>
+                                <li>
+                                    <a data-goto=".useful" href="" class="menu__link">Languages</a>
+                                </li>
+                                <li>
+                                    <a data-goto=".projects" href="" class="menu__link">Projects</a>
+                                </li>
+                                <li>
+                                    <a data-goto=".footer" href="" class="menu__link">Contacts</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="greeting">
+                <div class="greeting__row scroll">
+                    <div class="greeting__img">
+                        <img src="./img/me.jpg" alt="">
+                    </div>
+                    <div class="greeting__content">
+                        <div class="greeting__welcome">
+                            Welcome
+                        </div>
+                        <div class="greeting__title">
+                            I’m Danulo  Budzhak
+                        </div>
+                        <div class="greeting__text">
+                            Front-end developer
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about">
+                <about class="about__row scroll">
+                    <div class="about__content">
+                        <div class="about__title">
+                            About me
+                        </div>
+                        <div class="about__text">
+                            As you already know my name is Danulo I`m 18 and I am a Front-end developer. 
+                            I live in Ukraine and study on second grade in State University 
+                            of Telecommunications that is situated in Kyiv. I am extremely hard-working and ambitious.
+                            My hobbies are basketball, workout and obviously programming
+                        </div>
+                    </div>
+                    <div class="about__threed">
+                        <div class="click">
+                            <span class="clickme">
+                                click on my head
+                            </span>
+                        </div>
+                        <canvas id="artifactCanvas" class="scroll"></canvas>
+                    </div>
+                </about>
+            </div>
+            <div class="skills scroll">
+                <div class="skills__title title">
+                    <p>Skills</p>
+                </div>
+                <div class="skills__row scroll">
+                    <div class="skills__sub_row">
+                        <div class="skills__column">
+                            <div class="skills__shape">
+                                <div class="skills__outer">
+                                    <div class="skills__inner">
+                                        <div class="skills__num">
+                                            5
+                                        </div>
+                                    </div>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                    <defs>
+                                    <linearGradient id="GradientColor">
+                                        <stop offset="0%" stop-color="#15B9B9" />
+                                        <stop offset="100%" stop-color="#3C1DFF" />
+                                    </linearGradient>
+                                    </defs>
+                                    <circle cx="80" cy="80" r="70" stroke-linecap="round" id="cOne"/>
+                                </svg>
+                            </div>
+                            <div class="skills__text">
+                                HTML
+                            </div>
+                        </div>
+                        <div class="skills__column">
+                            <div class="skills__shape">
+                                <div class="skills__outer">
+                                    <div class="skills__inner">
+                                        <div class="skills__num">
+                                            5
+                                        </div>
+                                    </div>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                    <defs>
+                                    <linearGradient id="GradientColor">
+                                        <stop offset="0%" stop-color="#15B9B9" />
+                                        <stop offset="100%" stop-color="#3C1DFF" />
+                                    </linearGradient>
+                                    </defs>
+                                    <circle cx="80" cy="80" r="70" stroke-linecap="round" id="cTwo"/>
+                                </svg>
+                            </div>
+                            <div class="skills__text">
+                                CSS/SASS
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills__sub_row">
+                        <div class="skills__column">
+                                <div class="skills__shape">
+                                    <div class="skills__outer">
+                                        <div class="skills__inner">
+                                            <div class="skills__num">
+                                                3
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                        <defs>
+                                        <linearGradient id="GradientColor">
+                                            <stop offset="0%" stop-color="#15B9B9" />
+                                            <stop offset="100%" stop-color="#3C1DFF" />
+                                        </linearGradient>
+                                        </defs>
+                                        <circle cx="80" cy="80" r="70" stroke-linecap="round" id="cThree"/>
+                                    </svg>
+                                </div>
+                                <div class="skills__text">
+                                    JAVA SCRIPT
+                                </div>
+                            </div>
+                            <div class="skills__column">
+                                <div class="skills__shape">
+                                    <div class="skills__outer">
+                                        <div class="skills__inner">
+                                            <div class="skills__num">
+                                                2
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                        <defs>
+                                        <linearGradient id="GradientColor">
+                                            <stop offset="0%" stop-color="#15B9B9" />
+                                            <stop offset="100%" stop-color="#3C1DFF" />
+                                        </linearGradient>
+                                        </defs>
+                                        <circle cx="80" cy="80" r="70" stroke-linecap="round" id="cFour"/>
+                                    </svg>
+                                </div>
+                                <div class="skills__text">
+                                    THREE.JS
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="useful">
+                <div class="container">
+                    <div class="useful__row scroll">
+                        <div class="useful__column">
+                            <div class="useful__title title">
+                                Language
+                            </div>
+                            <div class="useful__eng">
+                                <div class="useful__level eng">
+                                    <div class="useful__name">
+                                        Englsh
+                                    </div>
+                                    <div class="useful__knowladge">
+                                        Upper-Intermediate
+                                    </div>
+                                </div>
+                                <div class="useful__line" id="eng">
+
+                                </div>
+                            </div>
+                            <div class="useful__urk">
+                                <div class="useful__level urk">
+                                    <div class="useful__name">
+                                        Ukrainian
+                                    </div>
+                                    <div class="useful__knowladge">
+                                        Native
+                                    </div>
+                                </div>
+                                <div class="useful__line" id="ukr">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="useful__column">
+                            <div class="useful__title title">
+                                Useful skills
+                            </div>
+                            <div class="useful__psd">
+                                <div class="useful__level psd">
+                                    <div class="useful__name">
+                                        Adobe Photoshop
+                                    </div>
+                                    <div class="useful__knowladge">
+                                        3.5
+                                    </div>
+                                </div>
+                                <div class="useful__line" id="psd">
+                            
+                                </div>
+                            </div>
+                            <div class="useful__res">
+                                <div class="useful__level res">
+                                    <div class="useful__name">
+                                        Responsive Design
+                                    </div>
+                                    <div class="useful__knowladge">
+                                        4
+                                    </div>
+                                </div>
+                                <div class="useful__line" id="res">
+                                    
+                                </div>
+                            </div>
+                            <div class="useful__vc">
+                                <div class="useful__level vc">
+                                    <div class="useful__name">
+                                        Version Control
+                                    </div>
+                                    <div class="useful__knowladge">
+                                        3
+                                    </div>
+                                </div>
+                                <div class="useful__line" id="vc">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects">
+                <div class="container">
+                    <div class="projects__row scroll">
+                        <div class="projects__content">
+                            <div class="projects__title title">
+                                Projects i`ve made 
+                            </div>
+                            <div class="projects__text">
+                                I want to show you all skills that I have got, 
+                                so here you can see some examples of websites that I developed. 
+                                These are free figma templates that I used for practice, some of them are responsive.
+                            </div>
+                        </div>
+                        <div class="swiper">
+                        <div class="swiper-wrapper">
+                        <!-- Slides -->
+                            <div class="swiper-slide"><img src="./img/laslesvpn.png" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/chatip.png" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/weiss.png" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/agency.png" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/healthy.png" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/nike.png" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/bayside.png" alt=""></div>
+                        ...
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__row scroll">
+                    <div class="footer__inst">
+                        <a href="https://www.instagram.com/misssffit/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i> @misssffit
+                        </a>
+                    </div>
+                    <div class="footer__gmail">
+                        <a href="https://mail.google.com/mail/u/0/#sent?compose=CllgCJfpKllKLCSMPChdrdpmdpzlJQFJmSSpDfRdNWWRtKjPWZMqzfqGJVmnrbPKTdTkGQTPpbq" target="_blank">
+                        <i class="fa-solid fa-envelope"></i> misssffit@gmail.com
+                        </a>
+                    </div>
+                    <div class="footer__phone">
+                        <i class="fa-solid fa-square-phone-flip"></i> +380683327422
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/main.js" type="module"></script>
+    <script src="https://kit.fontawesome.com/e79cad4f5b.js" crossorigin="anonymous"></script>
+    <script src="./js/animate.js"></script>
+    <script src="./js/nav.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+        
+            // If we need pagination
+            pagination: {
+            el: '.swiper-pagination',
+            },
+        
+            // Navigation arrows
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },
+        
+            // And if we need scrollbar
+            scrollbar: {
+            el: '.swiper-scrollbar',
+            },
+        });
+    </script>
+</body>
+</html>

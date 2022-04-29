@@ -1,0 +1,174 @@
+//////mixins/////
+
+@mixin stats {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    color: #ffffff;
+}
+
+////////////////
+
+.skills {
+    padding: 0 20px 0 20px;
+    margin-bottom: 120px;
+    // .skills__title
+
+    &__title {
+        margin-bottom: 40px;
+        &::before{
+            content: ' ';
+            position: absolute;
+            width: 84px;
+            height: 0;
+            border: 1px solid #ffffff;
+        }
+        transform: translate(0 10%);
+        opacity: 0;
+        transition: all 0.5s ease 0s;
+    }
+
+
+
+    // .skills__row
+
+    &__row {
+        display: flex;
+        justify-content:space-around;
+    }
+
+    &__sub_row{
+            flex: 1 1 50%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            &:first-child{
+                margin-right: 60px;
+            }
+            
+    }
+    // .skills__column
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &:first-child{
+            margin-right: 30px;
+        }
+    }
+
+    // .skills__shape
+
+    &__shape {
+        width: 160px;
+        height: 160px;
+        position: relative;
+        margin-bottom: 20px;
+        
+    }
+
+    &__outer{
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        padding: 20px;
+    }
+
+    &__inner{
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__num{
+        transform: translate(0 10%);
+        opacity: 0;
+        transition: all 0.5s ease 0s;
+    }
+    circle{
+        display: none;
+    }
+    svg{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    // .skills__text
+
+    &__text {
+        @include stats;
+    }
+}
+
+.skills__row.active {
+    .skills__num{
+        transform: translate(0 0);
+        opacity: 1;
+        transition: all 1.5s ease 0s;
+        @include stats;
+    }
+    #cOne{
+        display: block;
+        fill: none;
+        stroke: url(#GradientColor);
+        stroke-width: 20px;
+        stroke-dasharray: 472;
+        stroke-dashoffset: 472;
+        animation: filling  2s linear  forwards;
+    }
+    #cTwo{
+        display: block;
+        fill: none;
+        stroke: url(#GradientColor);
+        stroke-width: 20px;
+        stroke-dasharray: 472;
+        stroke-dashoffset: 472;
+        animation: filling  2s linear  forwards;
+    }
+    #cThree{
+        display: block;
+        fill: none;
+        stroke: url(#GradientColor);
+        stroke-width: 20px;
+        stroke-dasharray: 472;
+        stroke-dashoffset: 472;
+        animation: fillingThree  2s linear  forwards;
+    }
+    #cFour{
+        display: block;
+        fill: none;
+        stroke: url(#GradientColor);
+        stroke-width: 20px;
+        stroke-dasharray: 472;
+        stroke-dashoffset: 472;
+        animation: fillingFour  2s linear  forwards;
+    }
+}
+
+.skills.active{
+    .skills__title{
+        transform: translate(0 0);
+        opacity: 1;
+        transition: all 1.5s ease 0s;
+    }
+}
+
+@keyframes filling{
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes fillingThree{
+    100%{
+        stroke-dashoffset: 189;
+    }
+}
+@keyframes fillingFour{
+    100%{
+        stroke-dashoffset: 284;
+    }
+}

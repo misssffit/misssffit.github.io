@@ -1,0 +1,81 @@
+@import './null.scss';
+@import './greeting.scss';
+@import'./about.scss';
+@import'./skills.scss';
+@import './useful.scss';
+@import './header.scss';
+@import './footer.scss';
+@import './adapt.scss';
+@import './projects.scss';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+
+////// variables ////////
+
+$title : 56px;
+$title_line : 84px;
+
+////////////////////////
+
+////// mixins /////////
+
+@mixin titles {
+    font-weight: 600;
+    color: #ffffff;
+    font-size: $title;
+    line-height: $title_line;
+
+}
+
+
+///////////////////////
+
+body{
+    font-family: 'Poppins', sans-serif;
+    //background-color: #1F1F1F;
+    margin: 0px; background-color: #222222; overflow: auto;
+    &.lock{
+        overflow: hidden;
+    }
+}
+
+
+a{
+    padding-bottom: 5px;
+    &:visited{
+        color: #ffffff;
+    }
+    &:active{
+        color: white;
+    }
+    &:hover{
+        border-bottom: 1px solid #ffffff;
+    }
+}
+
+.wrapper{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    max-width: 1240px;
+    margin: 0 auto;
+    flex: 0 1 auto;
+}
+
+.title {
+    @include titles;
+}
+
+
+@media(max-width: 992px){
+    .title{
+        font-size: 52px;
+        line-height: 80px;
+    }
+}
+
+
