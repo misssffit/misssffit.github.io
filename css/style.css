@@ -239,8 +239,13 @@ canvas.active {
 }
 
 .click {
+  position: relative;
+}
+
+.clickme {
   position: absolute;
-  left: 25%;
+  top: 0;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -261,7 +266,7 @@ canvas.active {
   line-height: 24;
 }
 
-.click.active {
+.clickme.active {
   width: 300px;
   height: 30px;
 }
@@ -464,7 +469,6 @@ canvas.active {
   }
 }
 .useful {
-  padding: 0 20px 0 20px;
   margin-bottom: 120px;
 }
 .useful__row {
@@ -474,6 +478,7 @@ canvas.active {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0 20px 0 20px;
 }
 .useful__column {
   -webkit-box-flex: 1;
@@ -650,6 +655,13 @@ canvas.active {
   font-weight: 600;
   font-size: 14px;
   line-height: 24px;
+  color: #ffffff;
+}
+
+a:active {
+  color: #ffffff;
+}
+a:visited {
   color: #ffffff;
 }
 
@@ -906,8 +918,13 @@ canvas.active {
 }
 
 .click {
+  position: relative;
+}
+
+.clickme {
   position: absolute;
-  left: 25%;
+  top: 0;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -928,7 +945,7 @@ canvas.active {
   line-height: 24;
 }
 
-.click.active {
+.clickme.active {
   width: 300px;
   height: 30px;
 }
@@ -1238,7 +1255,6 @@ canvas.active {
   }
 }
 .useful {
-  padding: 0 20px 0 20px;
   margin-bottom: 120px;
 }
 .useful__row {
@@ -1248,6 +1264,7 @@ canvas.active {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0 20px 0 20px;
 }
 .useful__column {
   -webkit-box-flex: 1;
@@ -1379,6 +1396,13 @@ canvas.active {
   transition: all 1s ease 0s;
 }
 
+a:active {
+  color: #ffffff;
+}
+a:visited {
+  color: #ffffff;
+}
+
 .footer {
   border-top-left-radius: 100px;
   background: rgba(255, 255, 255, 0.05);
@@ -1469,7 +1493,6 @@ canvas.active {
 
 .projects {
   margin-bottom: 120px;
-  padding: 0 20px 0 20px;
 }
 .projects__title {
   text-align: center;
@@ -1478,6 +1501,7 @@ canvas.active {
   margin-bottom: 20px;
 }
 .projects__row {
+  padding: 0 20px 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1976,7 +2000,6 @@ canvas.active {
 }
 .projects {
   margin-bottom: 120px;
-  padding: 0 20px 0 20px;
 }
 .projects__title {
   text-align: center;
@@ -1985,6 +2008,7 @@ canvas.active {
   margin-bottom: 20px;
 }
 .projects__row {
+  padding: 0 20px 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

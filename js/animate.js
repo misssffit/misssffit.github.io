@@ -29,3 +29,4 @@ let load = document.querySelectorAll('.scroll');
 
     onScroll();
     window.addEventListener('scroll', onScroll);
+

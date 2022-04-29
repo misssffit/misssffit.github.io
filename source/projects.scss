@@ -1,6 +1,5 @@
 .projects{
     margin-bottom: 120px;
-    padding: 0 20px 0 20px;
 
     &__title{
         text-align: center;
@@ -10,6 +9,7 @@
     }
 
     &__row{
+        padding: 0 20px 0 20px;
         display: flex;
         justify-content: space-between;
     }

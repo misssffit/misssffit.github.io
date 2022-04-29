@@ -22,25 +22,28 @@ function canvasTop(){
     var row = document.querySelector('.about__row');
     var canvasPosition =  canvasBlock.getBoundingClientRect().top + pageYOffset +120;
     var canvasPositionLeft = 50;
-    var textPosition = 190;
+    var textPosition = canvasHeight/2;
+    var textPositionLeft = 0;
     var rowMargin = 0;
     if(window.innerWidth<=1200 && window.innerWidth >992){
         canvasPosition = canvasBlock.getBoundingClientRect().top + pageYOffset ;
+        textPositionLeft = -canvasWidth/4;
     }else if(window.innerWidth<=992 && window.innerWidth > 767){
         canvasPosition = canvasBlock.getBoundingClientRect().top + pageYOffset +canvasBlock.getBoundingClientRect().height;
         canvasPositionLeft = 30;
-        textPosition = 0;
-        rowMargin = canvasHeight;
+        textPosition = canvasHeight;
+        rowMargin = canvasHeight+100;
     }else if(window.innerWidth<=767){
         canvasPosition = canvasBlock.getBoundingClientRect().top + pageYOffset +canvasBlock.getBoundingClientRect().height;
-        canvasPositionLeft = 30;
-        textPosition = 220;
-        rowMargin = canvasHeight;
+        canvasPositionLeft = -canvasWidth/2;
+        textPosition = canvasHeight+canvasBlock.getBoundingClientRect().height;
+        rowMargin = canvasHeight+100;
     }
     row.style.marginBottom = rowMargin+'px';
     canv.style.top = canvasPosition+'px';
     canv.style.left = canvasPositionLeft+'%';
-    textClass.style.top = textPosition+'px';
+    textElement.style.top = textPosition+'px';
+    textElement.style.left = textPositionLeft+'px';
 }
 
 canv.width = canvasWidth;
@@ -96,7 +99,7 @@ window.addEventListener('click', event =>{
     if(found.length > 0){
         console.log('found an object');
         console.log(texElementContent);
-        textClass.classList.add('active');
+        textElement.classList.add('active');
         textElement.innerHTML = 'if you have any questions - contact me';
     }
 })

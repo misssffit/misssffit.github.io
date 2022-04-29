@@ -8,7 +8,14 @@
         padding-right: 10px;
     }
 }
-
+a{
+    &:active{
+        color: #ffffff;
+    }
+    &:visited{
+        color: #ffffff;
+    }
+}
 .footer {
     border-top-left-radius: 100px;
     background: rgba(255, 255, 255 ,0.05);
