@@ -723,9 +723,6 @@ canvas.active {
 .footer__phone i {
   padding-right: 10px;
 }
-.footer__link {
-  color: #ffffff;
-}
 
 .footer__row.active .footer__inst {
   -webkit-transform: translate(0 0);
@@ -1456,9 +1453,6 @@ canvas.active {
 }
 .footer__phone i {
   padding-right: 10px;
-}
-.footer__link {
-  color: #ffffff;
 }
 
 .footer__row.active .footer__inst {
