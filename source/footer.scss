@@ -8,20 +8,20 @@
         padding-right: 10px;
     }
 }
-a{
-    &:active{
-        color: #ffffff;
-    }
-    &:visited{
-        color: #ffffff;
-    }
-}
+
 .footer {
     border-top-left-radius: 100px;
     background: rgba(255, 255, 255 ,0.05);
     box-shadow: 0 5px 15px rgba( 0, 0, 0 ,1);
     // .footer__container
-
+    a{
+        &:active{
+            color: #ffffff;
+        }
+        &:visited{
+            color: #ffffff;
+        }
+    }
     &__container {
         max-width: 1240px;
         margin: 0 auto;

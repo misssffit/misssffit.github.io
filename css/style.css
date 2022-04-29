@@ -658,18 +658,17 @@ canvas.active {
   color: #ffffff;
 }
 
-a:active {
-  color: #ffffff;
-}
-a:visited {
-  color: #ffffff;
-}
-
 .footer {
   border-top-left-radius: 100px;
   background: rgba(255, 255, 255, 0.05);
   -webkit-box-shadow: 0 5px 15px black;
           box-shadow: 0 5px 15px black;
+}
+.footer a:active {
+  color: #ffffff;
+}
+.footer a:visited {
+  color: #ffffff;
 }
 .footer__container {
   max-width: 1240px;
@@ -1396,18 +1395,17 @@ canvas.active {
   transition: all 1s ease 0s;
 }
 
-a:active {
-  color: #ffffff;
-}
-a:visited {
-  color: #ffffff;
-}
-
 .footer {
   border-top-left-radius: 100px;
   background: rgba(255, 255, 255, 0.05);
   -webkit-box-shadow: 0 5px 15px black;
           box-shadow: 0 5px 15px black;
+}
+.footer a:active {
+  color: #ffffff;
+}
+.footer a:visited {
+  color: #ffffff;
 }
 .footer__container {
   max-width: 1240px;
