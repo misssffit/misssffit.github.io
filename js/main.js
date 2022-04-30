@@ -35,7 +35,8 @@ function canvasTop(){
         rowMargin = canvasHeight+100;
     }else if(window.innerWidth<=767){
         canvasPosition = canvasBlock.getBoundingClientRect().top + pageYOffset +canvasBlock.getBoundingClientRect().height;
-        canvasPositionLeft = -canvasWidth/2;
+        canvasPositionLeft = 30;
+        textPositionLeft = -canvasWidth/2;
         textPosition = canvasHeight+canvasBlock.getBoundingClientRect().height;
         rowMargin = canvasHeight+100;
     }
@@ -88,8 +89,6 @@ window.onmousemove = function(ev){
 const raycaster = new THREE.Raycaster();
 const mouseClick = new THREE.Vector2();
 const textElement = document.querySelector('.clickme');
-const textClass = document.querySelector('.click');
-const texElementContent = textElement.innerHTML;
 
 window.addEventListener('click', event =>{
     mouseClick.x = ( event.offsetX / canvasWidth ) * 2 - 1;
@@ -97,8 +96,6 @@ window.addEventListener('click', event =>{
     raycaster.setFromCamera( mouseClick, camera );
 	const found = raycaster.intersectObjects( scene.children );
     if(found.length > 0){
-        console.log('found an object');
-        console.log(texElementContent);
         textElement.classList.add('active');
         textElement.innerHTML = 'if you have any questions - contact me';
     }
